@@ -1,0 +1,58 @@
+.post:hover {
+  color:#606060;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.post {
+  color:black;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  margin-bottom:0;
+}
+
+.category:hover {
+  background-color:#6CB2EB;
+  border:2px solid #2779BD;
+  color:black;
+  cursor:pointer;
+
+}
+
+.category {
+  height:30px;
+  width:80px;
+  line-height:25px;
+  font-size:15px;
+  border:2px solid #2779BD;
+  border-radius:3px;
+  font-family:Helvetica;
+  text-align:center;
+  margin-right:7px;
+  background-color:#BCDEFA;
+  position:relative;
+  z-index:20;
+  margin-bottom:5px;
+}
+
+.selected:hover {
+  cursor:pointer;
+}
+
+.selected {
+  height:30px;
+  width:80px;
+  line-height:25px;
+  font-size:15px;
+  border:2px solid #38C172;
+  border-radius:3px;
+  font-family:Helvetica;
+  text-align:center;
+  margin-right:7px;
+  background-color:#A2F5BF;
+  position:relative;
+  z-index:20;
+  margin-bottom:5px;
+}
