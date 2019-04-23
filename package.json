@@ -1,9 +1,12 @@
 {
-  "name": "Bud Rosch Writing Portfolio",
+  "name": "gatsby-starter-blog",
   "private": true,
-  "description": "A Writing portfolio for Bud Rosch",
+  "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Michael Grotton",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
   "dependencies": {
     "gatsby": "^2.3.25",
     "gatsby-image": "^2.0.39",

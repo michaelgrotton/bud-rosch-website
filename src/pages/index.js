@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale} from "../utils/typography"
+import {scale} from "../utils/typography"
 import styles from "./index.module.css"
 
 class BlogIndex extends React.Component {
@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const allcategories = this.props.data.allcategories.group
     let posts;
-    if(this.state.selected == "none") {
+    if(this.state.selected === "none") {
       posts = data.allMarkdownRemark.edges
     } else {
       posts = data.allMarkdownRemark.edges.filter(edge =>
@@ -67,7 +67,6 @@ class BlogIndex extends React.Component {
             <Link
               style={{
                 boxShadow: `none`,
-                boxShadow:"none",
                 textDecoration:"none"
                 }}
                 to={node.fields.slug}
