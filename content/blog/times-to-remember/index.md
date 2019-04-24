@@ -1,7 +1,7 @@
 ---
 title: Times To Remember
 date: "2019-04-03"
-category: ["children","family"]
+category: ["family","exercise-with-maggie"]
 ---
 
 There are times in one's life when the stars align for Times To Remember.  When I graduated from High School; got a job, joined the Army, went to Japan, and started college was one of those times.

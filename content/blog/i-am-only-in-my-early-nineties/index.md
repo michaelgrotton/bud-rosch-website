@@ -1,7 +1,7 @@
 ---
 title: I Am Only In My Early Nineties
 date: "2017-11-23"
-category: ["family","birthday","aging"]
+category: ["family","aging"]
 ---
 
 My family is planning a wonderful Birthday party for my ninetieth birthday.  Everyone is coming   including my sons-in-law and two prospective members, altogether there will be seventeen of us.  Many of them are coming from a great distance which I very much appreciate.  I hope that the food and wine will be some compensation for their travel.  We will be having a private dinner at our best Italian restaurant Friday night, a workout for all with my trainer Saturday morning and an all-out lunch featuring imported smoked Salmon and Bagels from New York.   Saturday evening will be the climax with a great catered meal at our house.  Needless to say, there will be an assortment of fine wines.

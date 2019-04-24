@@ -44,7 +44,7 @@ class BlogIndex extends React.Component {
       <h4 style={{fontFamily:"Helvetica",marginBottom:"10px"}}>Filter pieces by tag:</h4>
         <div style={{display:"flex",marginBottom:"15px",flexWrap:"wrap"}}>
           {allcategories.map(category => (
-            <div key={category.fieldValue} className={this.state.selected === category.fieldValue ? styles.selected : styles.category} onClick={()=>{this.state.selected === category.fieldValue ? this.setState({selected:"none"}) : this.setState({selected:category.fieldValue})}} style={{width:"90px"}}>
+            <div key={category.fieldValue} className={this.state.selected === category.fieldValue ? styles.selected : styles.category} onClick={()=>{this.state.selected === category.fieldValue ? this.setState({selected:"none"}) : this.setState({selected:category.fieldValue})}}>
               #{category.fieldValue} <strong style={{color:"#CC1F1A"}}>{category.totalCount}</strong>
             </div>
           ))}
@@ -92,13 +92,15 @@ class BlogIndex extends React.Component {
             </Link>
             <div style={{display:"flex",marginBottom:"50px",flexWrap:"wrap"}}>
               <div style={{fontFamily:"Helvetica",fontSize:"15px",height:"30px",lineHeight:"29px",marginRight:"10px"}}><strong>Tags:</strong></div>
-              {categories.map((category, index) => {
-                return(
-                  <div className={styles.category} key={index} onClick={()=>{this.setState({selected:category})}}>
-                      #{category}
-                  </div>
-                )
-              })}
+              <div style={{display:"flex"}}>
+                {categories.map((category, index) => {
+                  return(
+                    <div className={styles.category} key={index} onClick={()=>{this.setState({selected:category})}}>
+                        #{category}
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
           )
