@@ -30,17 +30,16 @@
   border-radius:3px;
   font-family:Helvetica;
   text-align:center;
-  margin-right:7px;
   background-color:#BCDEFA;
   position:relative;
   z-index:20;
-  margin-bottom:5px;
   padding-left:5px;
   padding-right:5px;
 }
 
 .selected:hover {
   cursor:pointer;
+  background-color:#A779E9;
 }
 
 .selected {
@@ -48,15 +47,67 @@
   min-width:80px;
   line-height:25px;
   font-size:15px;
-  border:2px solid #38C172;
+  border:2px solid #794ACF;
   border-radius:3px;
   font-family:Helvetica;
   text-align:center;
   margin-right:7px;
-  background-color:#A2F5BF;
+  background-color:#D6BBFC;
   position:relative;
   z-index:20;
   margin-bottom:5px;
   padding-left:5px;
   padding-right:5px;
+}
+
+.clear {
+  height:30px;
+  max-width:150px;
+  line-height:25px;
+  font-size:15px;
+  border:2px solid #794ACF;
+  border-radius:3px;
+  font-family:Helvetica;
+  text-align:center;
+  background-color:#D6BBFC;
+  position:relative;
+  z-index:20;
+  padding-left:5px;
+  padding-right:5px;
+  margin:auto;
+  margin-bottom:10px;
+  display:flex;
+  justify-content: center;
+}
+
+.clear:hover {
+  background-color:#A779E9;
+  cursor:pointer;
+}
+
+.clearHide {
+  display:none;
+}
+
+.all {
+  color:#3490DC;
+  font-size:22px;
+  text-decoration:none;
+  box-shadow:none;
+}
+
+.all:visited {
+  color:#3490DC;
+}
+
+.catLink:visited {
+  color:black;
+}
+
+.catLink {
+  color:black;
+}
+
+.all:hover {
+  color:#2779BD;
 }

@@ -1,6 +1,6 @@
 ---
 title: Hatred, Fear, Bigotry, Resentment -- Januwordy (Unleash)
-category: ["januwordy","trump"]
+category: ["januwordy","politics"]
 date: "2019-02-16"
 ---
 

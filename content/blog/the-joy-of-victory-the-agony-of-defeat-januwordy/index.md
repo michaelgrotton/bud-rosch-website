@@ -1,6 +1,6 @@
 ---
 title: The Joy of Victory, the Agony of Defeat -- Januwordy (Beat)
-category: ["januwordy"]
+category: ["januwordy","sports"]
 date: "2019-01-13"
 ---
 

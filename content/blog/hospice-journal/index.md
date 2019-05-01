@@ -1,0 +1,9 @@
+---
+title: Hospice Journal
+date: "2017-05-01"
+category: ["hospice"]
+---
+
+Yesterday was a good day at Hospice, Barbra my favorite nurse asked me to forego making cookies because they had a restless patient.  I should note that some nurses employ Volunteers much more than others and are also just nicer than others.  It is so much more rewarding when one can serve one of the patients.  I should also note that there are so many ways we can help, we can prepare and assist feeding, sit with restless patients, assist the nurses when bathing, take the patients in wheel-chairs around the buildings and make cookies.
+
+Back to yesterday. Barbra asked me to sit with a patient named Jane who was very restless.  I am always somewhat uncomfortable with patients whose mental capacity has been diminished.  Hospice does not use restraints or drugs to restrain the patients and one is required to convince someone who is irrational that they should listen to you.  I still remember a patient I had many years ago, he was a big strong guy who wanted to leave.  He told me, while looking down at me,  in no certain terms that he knew what he was doing and was going to leave.  After a few minutes I was not able to convince him to stay and pressed the call button, Katie came running in, introduced herself and had no more success than I did.  About twenty minutes later the patient was half way down the corridor surrounded by a doctor and three or four aides and nurses before they could get him to return to the room.  My patient Jane was about 70 and her cancer had metastasized and affected her brain.  She had just been admitted and was with her sister who had come to Hospice out of desperation.  When I entered the room Jane was sitting on the edge of the bed trying to leave.  Her sister and one of the nursed were talking to her trying to get her back in the bed. I told her that I was her Guardian Angel but that did not help.    

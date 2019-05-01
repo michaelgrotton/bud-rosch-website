@@ -13,8 +13,12 @@ class BlogIndex extends React.Component {
   }
 
   render() {
+    const { currentPage, numPages } = this.props.pageContext
+    const isFirst = currentPage === 1
+    const isLast = currentPage === numPages
+    const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
+    const nextPage = (currentPage + 1).toString()
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
     const allcategories = this.props.data.allcategories.group
     let posts;
     if(this.state.selected === "none") {
@@ -23,11 +27,10 @@ class BlogIndex extends React.Component {
       posts = data.allMarkdownRemark.edges.filter(edge =>
         edge.node.frontmatter.category.includes(this.state.selected)
       )
-      console.log(this.state.selected)
     }
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location="index">
         <SEO
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
@@ -41,12 +44,14 @@ class BlogIndex extends React.Component {
           }}
         />
 
-      <h4 style={{fontFamily:"Helvetica",marginBottom:"10px"}}>Filter pieces by tag:</h4>
-        <div style={{display:"flex",marginBottom:"15px",flexWrap:"wrap"}}>
+      <h4 style={{fontFamily:"Helvetica",marginBottom:"10px"}}>Categories:</h4>
+        <div style={{display:"flex",marginBottom:"10px",flexWrap:"wrap"}}>
           {allcategories.map(category => (
-            <div key={category.fieldValue} className={this.state.selected === category.fieldValue ? styles.selected : styles.category} onClick={()=>{this.state.selected === category.fieldValue ? this.setState({selected:"none"}) : this.setState({selected:category.fieldValue})}}>
-              #{category.fieldValue} <strong style={{color:"#CC1F1A"}}>{category.totalCount}</strong>
-            </div>
+            <Link style={{marginRight:"7px",marginBottom:"5px",textDecoration:"none"}} className={styles.catLink} to={`categories/${category.fieldValue}`}>
+              <div key={category.fieldValue} className={styles.category}>
+                #{category.fieldValue} <strong style={{color:"#CC1F1A"}}>{category.totalCount}</strong>
+              </div>
+            </Link>
           ))}
         </div>
 
@@ -95,9 +100,11 @@ class BlogIndex extends React.Component {
               <div style={{display:"flex"}}>
                 {categories.map((category, index) => {
                   return(
-                    <div className={styles.category} key={index} onClick={()=>{this.setState({selected:category})}}>
+                    <Link style={{marginRight:"7px",marginBottom:"5px",textDecoration:"none"}} className={styles.catLink} to={`categories/${category}`}>
+                      <div key={category.fieldValue} className={styles.category}>
                         #{category}
-                    </div>
+                      </div>
+                    </Link>
                   )
                 })}
               </div>
@@ -105,6 +112,34 @@ class BlogIndex extends React.Component {
           </div>
           )
         })}
+
+        <hr
+          style={{
+            marginBottom:"15px",
+            backgroundColor:"black",
+
+          }}
+        />
+
+        <div style={{display:"flex",justifyContent:"space-between",marginBottom:"20px",fontFamily:"Helvetica"}}>
+        {!isFirst && (
+          <Link to={prevPage} rel="prev" className={styles.all}>
+            ← Previous Page
+          </Link>
+        )}
+        <div style={{display:"flex",flexWrap:"wrap",justifyContent:"space-between"}}>
+          {Array.from({ length: numPages }, (_, i) => (
+            <Link key={`pagination-number${i + 1}`} to={`/${i === 0 ? "" : i + 1}`} style={{marginRight:"5px"}} className={styles.all}>
+              {i + 1}
+            </Link>
+          ))}
+        </div>
+        {!isLast && (
+          <Link to={nextPage} rel="next" className={styles.all}>
+            Next Page →
+          </Link>
+        )}
+        </div>
       </Layout>
     )
   }
@@ -113,13 +148,24 @@ class BlogIndex extends React.Component {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  query blogPageQuery($skip: Int!, $limit: Int!){
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    exit: file(absolutePath: { regex: "/exit.png/" }) {
+      childImageSharp {
+        fixed(width: 20, height: 20) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           excerpt

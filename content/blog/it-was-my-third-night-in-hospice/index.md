@@ -1,7 +1,7 @@
 ---
 title: It Was My Third Night At Hospice
 date: "2011-02-16"
-category: ["illness","poetry"]
+category: ["illness","poetry","hospice"]
 ---
 
 <br/>

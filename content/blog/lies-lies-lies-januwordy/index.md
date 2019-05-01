@@ -1,6 +1,6 @@
 ---
 title: Lies, Lies, Lies -- Januwordy (Deceive)
-category: ["januwordy","trump"]
+category: ["januwordy","politics"]
 date: "2019-01-05"
 ---
 

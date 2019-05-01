@@ -5,11 +5,9 @@ import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === rootPath) {
+    if (this.props.location === "index") {
       header = (
         <h1
           style={{
@@ -29,7 +27,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
+            Bud Rosch Writing Portfolio
           </Link>
         </h1>
       )
@@ -52,7 +50,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
+            Bud Rosch Writing Portfolio
           </Link>
         </h2>
       )
@@ -67,7 +65,7 @@ class Layout extends React.Component {
         }}
       >
         <header>{header}</header>
-        <main>{children}</main>
+        <main>{this.props.children}</main>
         <footer>
           © {new Date().getFullYear()}, Bud Rosch.
         </footer>

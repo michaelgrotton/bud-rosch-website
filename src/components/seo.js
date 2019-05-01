@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -77,7 +77,11 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+      <meta http-equiv="Pragma" content="no-cache" />
+      <meta http-equiv="Expires" content="0" />
+    </Helmet>
   )
 }
 

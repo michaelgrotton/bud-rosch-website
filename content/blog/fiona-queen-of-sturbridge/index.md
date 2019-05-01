@@ -1,0 +1,34 @@
+---
+title: Fiona, Queen of Sturbridge
+date: "2017-05-02"
+category: ["poetry"]
+---
+
+<br/>
+
+IT IS WITH REGRET,
+
+THAT WE CANNOT ACCEPT,
+
+YOUR INVITATION TO SAY,
+
+FIONA, HAPPPY BIRTHDAY.
+
+<br/>
+
+WE ARE HAPPY TO GO,
+
+OUT TO CHICAGO,
+
+TO CONGRATULATE OUR GRANDSON,
+
+ON A GOAL HARD WON,
+
+HIS GRADUATION.
+
+<br/>
+
+BUD ROSCH,
+FIRST STURBRIDGE POET LAUREATE
+
+<br/>
